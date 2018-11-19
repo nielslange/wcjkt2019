@@ -1974,31 +1974,154 @@ body.category .entry-title a {
     }
 }
 
-.wcorg-sponsors {
-    h2 {
-        font-weight: 300;
-        font-size: 2em;
-        margin: 50px auto 20px;
-        text-align: center;
-    }
-    margin-bottom: 250px;
-}
-
-.wcorg-sponsor {
-    display: inline-block;
-    width: 45%;
-    >h3 {
-        display: none;
-    }
-    &:nth-child(odd) {
-        float: left;
-    }
-    &:nth-child(even) {
-        float: right;
-    }
-}
-
 body.page-slug-schedule #primary {
     max-width: 100%;
     width: 100rem;
+}
+
+/** SPONSORS **/
+
+.wcorg-sponsors {
+    &>div {
+        h2 {
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            font-size: 4rem;
+            &:before,
+            &:after {
+                content: '';
+                flex: 1 0 auto;
+                padding: 0 10px;
+                height: 4px;
+                background: #ffffff;
+                margin: 28px 20px 20px;
+            }
+        }
+        .wcorg-sponsor {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #eae4e3;
+            h3 {
+                display: flex;
+                align-items: center;
+                margin-top: 0;
+                margin-bottom: 60px;
+                &:after {
+                    content: '';
+                    flex: 1 0 auto;
+                    height: 4px;
+                    background-color: #10193f;
+                    margin-left: 20px;
+                }
+            }
+            .wcorg-sponsor-description {
+                position: relative;
+                .wp-post-image {
+                    position: absolute;
+                    right: 0;
+                    top: -60px;
+                    max-height: 50px;
+                }
+            }
+        }
+        &:nth-child(1) {
+            h2 {
+                background-color: #722247;
+                color: #ffffff;
+                &:before,
+                &:after {
+                    background: #ffffff;
+                }
+            }
+            h3 {
+                color: #722247;
+                &:after {
+                    background-color: #722247;
+                }
+            }
+        }
+        &:nth-child(2) {
+            h2 {
+                background-color: #bf6347;
+                color: #ffffff;
+                &:before,
+                &:after {
+                    background: #ffffff;
+                }
+            }
+            h3 {
+                color: #bf6347;
+                &:after {
+                    background-color: #bf6347;
+                }
+            }
+        }
+        &:nth-child(3) {
+            h2 {
+                background-color: #f68c36;
+                color: #ffffff;
+                &:before,
+                &:after {
+                    background: #ffffff;
+                }
+            }
+            h3 {
+                color: #f68c36;
+                &:after {
+                    background-color: #f68c36;
+                }
+            }
+        }
+        &:nth-child(3) {
+            h2 {
+                background-color: #f68c36;
+                color: #ffffff;
+                &:before,
+                &:after {
+                    background: #ffffff;
+                }
+            }
+            h3 {
+                color: #f68c36;
+                &:after {
+                    background-color: #f68c36;
+                }
+            }
+        }
+        &:nth-child(4) {
+            h2 {
+                background-color: #8d3d46;
+                color: #ffffff;
+                &:before,
+                &:after {
+                    background: #ffffff;
+                }
+            }
+            h3 {
+                color: #8d3d46;
+                &:after {
+                    background-color: #8d3d46;
+                }
+            }
+        }
+        &:nth-child(5) {
+            h2 {
+                background-color: #10193f;
+                color: #ffffff;
+                &:before,
+                &:after {
+                    background: #ffffff;
+                }
+            }
+            h3 {
+                color: #10193f;
+                &:after {
+                    background-color: #10193f;
+                }
+            }
+        }
+    }
 }
